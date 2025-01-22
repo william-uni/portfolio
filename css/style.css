@@ -23,7 +23,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 nav ul li a {
@@ -44,13 +44,33 @@ section {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #f0f8ff; 
+    padding: 2rem; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-section img {
+.image1 {
     width: 150px;
     height: 150px;
     margin-right: 2rem;
 }
+
+.image2 {
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
 footer {
     background: #1C5D99;
     color: #fff;
