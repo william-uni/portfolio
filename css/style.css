@@ -36,36 +36,47 @@ main {
 }
 
 h1 {
-    color: #222222;
-    padding: 0rem;
+    color: #222;
+    padding: 0;
 }
 
 section {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #f0f8ff; 
-    padding: 2rem; 
+    background-color: #f0f8ff;
+    padding: 1.75rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image1, .image2, .image3 {
+    margin-right: 2rem;
 }
 
 .image1 {
     width: 150px;
     height: 150px;
-    margin-right: 2rem;
 }
 
 .image2 {
-    width: 150px;
-    height: 150px;
-    margin-right: 2rem;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 
-.intro {
-    font-size: 1.3rem;
+.image3 {
+    width: 260px;
+    height: 260px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    display: block;
+}
+
+.mainblock {
+    font-size: 1.2rem;
     color: #333;
     line-height: 1.8;
     margin-top: 1rem;
@@ -75,9 +86,9 @@ footer {
     background: #1C5D99;
     color: #fff;
     text-align: center;
-    padding: 1rem 1;
+    padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-radius: 0%;
+    border-radius: 0;
 }
