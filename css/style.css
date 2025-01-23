@@ -88,6 +88,7 @@ footer p {
     color: inherit; 
     margin: 0;
 }
+
 .project {
     background: #1C5D99;
     margin: 1rem 0;
@@ -108,7 +109,6 @@ footer p {
     line-height: 1.8;
     margin-bottom: 1rem;
 }
-
 
 .project summary {
     font-weight: bold;
@@ -133,6 +133,7 @@ footer p {
 .project[open] .project-details {
     color: #000;
 }
+
 .index-image, .about-image {
     width: 100px;
     height: 100px;
@@ -155,4 +156,26 @@ footer p {
     border-radius: 1%;
     box-shadow: 2 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
+}
+
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    background: #f0f0f0;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+main ul li::before {
+    content: "-";
+    color: #1C5D99;
+    font-weight: bold;
+    margin-right: 0.5rem;
 }
