@@ -63,26 +63,6 @@ section.mainblock {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-section.mainblock img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-figure {
-    text-align: center;
-}
-
-figure img {
-    width: 200px;
-    height: auto;
-    border-radius: 20%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
-}
-
 h1 {
     font-size: 2rem;
     color: #333;
@@ -107,4 +87,72 @@ footer {
 footer p { 
     color: inherit; 
     margin: 0;
+}
+.project {
+    background: #1C5D99;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #000;
+}
+
+.project:hover {
+    background: #83BCFF;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+
+.project summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.project[open] {
+    background: #83BCFF;
+    color: #000;
+}
+
+.project[open] summary {
+    color: #000;
+}
+
+.project-details {
+    margin-top: 1rem;
+    color: #000;
+}
+
+.project[open] .project-details {
+    color: #000;
+}
+.index-image, .about-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.index-profile {
+    width: 200px;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.project-thumbnail {
+    width: 640px;
+    height: 375px;
+    border-radius: 1%;
+    box-shadow: 2 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
 }
