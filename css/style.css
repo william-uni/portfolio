@@ -151,8 +151,8 @@ footer p {
 }
 
 .project-thumbnail {
-    width: 100%;
-    height: auto;
+    width: 640px;
+    height: 375px;
     border-radius: 1%;
     box-shadow: 2 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
@@ -187,3 +187,53 @@ main ul li.icon-item::before {
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 0.5rem;
+}
+
+main ul li.no-dash::before {
+    content: "";
+}
+
+.formblock {
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formblock label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.formblock input,
+.formblock textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formblock button {
+    background: #1C5D99;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formblock button:hover {
+    background: #10527d;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
