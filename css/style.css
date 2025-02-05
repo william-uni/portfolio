@@ -63,7 +63,7 @@ section.mainblock {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 section.mainblock-alt {
-    width: 100vh;
+    width: 80vh;
     text-align: center;
     margin-bottom: 2rem;
     background-color: #fff;
@@ -98,6 +98,7 @@ footer p {
     margin: 0;
 }
 
+
 .project {
     background: #1C5D99;
     margin: 1rem 0;
@@ -131,6 +132,7 @@ footer p {
     color: #000;
 }
 
+
 .project[open] summary {
     color: #000;
 }
@@ -151,19 +153,19 @@ footer p {
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .index-image1 {
     width: 120px;
     height: 120px;
     margin-bottom: -20px;
     margin-top: -26px;
-
 }
+
 .index-image2 {
     width: 110px;
     height: 100px;
     margin-bottom: -15px;
     margin-top: -15px;
-
 }
 
 .index-image3 {
@@ -171,7 +173,6 @@ footer p {
     height: 87px;
     margin-bottom: -15px;
     margin-top: -15px;
-
 }
 
 .index-image4 {
@@ -179,8 +180,8 @@ footer p {
     height: 60px;
     margin-bottom: -10px;
     margin-top: -10px;
-
 }
+
 .index-image5 {
     width: 80px;
     height: 80px;
@@ -199,8 +200,9 @@ footer p {
 }
 
 .project-thumbnail {
-    width: 640px;
-    height: 375px;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
     border-radius: 1%;
     box-shadow: 2 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
@@ -242,7 +244,7 @@ main ul li.no-dash::before {
 }
 
 .formblock {
-    max-width: 100vh;
+    max-width: 100%;
     text-align: left;
     margin: 0 auto;
     background-color: #fff;
@@ -285,11 +287,13 @@ main ul li.no-dash::before {
     height: 30px;
     margin-right: 0.5rem;
 }
+
 .icon-alt {
     width: 40px;
     height: 40px;
     margin: -0.3rem;
 }
+
 .section-divider {
     border: none;
     height: 3px;
@@ -297,4 +301,3 @@ main ul li.no-dash::before {
     margin: 20px 0;
     opacity: 0.6;
 }
-
