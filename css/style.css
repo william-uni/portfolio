@@ -103,23 +103,33 @@ footer p {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-    color: #000;
+    color: #fff;
 }
-
+.project p {
+    font-size: 1.1rem;
+    color: #DBDFE6;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
 .project:hover {
-    background: #83BCFF;
+    background: #10527d;
 }
 
 .project summary {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: #0D1321;
+    color: #fff;
 }
 
 .project[open] {
-    background: #83BCFF;
-    color: #000;
+    background: #1C5D99;
+    color: #fff;
+}
+
+.project-details {
+    margin-top: 1rem;
+    color: #fff;
 }
 
 .index-image, .about-image, .index-image5, .index-profile, .project-thumbnail {
