@@ -1,93 +1,104 @@
+/* Smooth scrolling for the entire document */
 html {
     scroll-behavior: smooth;
 }
 
+/* General body styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+    margin: 0; /* Overrides default margin */
+    padding: 0; /* Overrides default padding */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
     background: #f7f9fc;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arranges children in a column */
 }
 
+/* Sticky header with background colour */
 header {
     background: #1C5D99;
     color: #fff;
     padding: 1rem;
-    position: sticky;
+    position: sticky; /* Keeps the header at the top of the page */
     top: 0;
-    z-index: 10;
+    z-index: 10; /* Ensures the header is above other elements, such as layers. */
     width: 100%;
 }
 
+/* Centre-aligns the navigation bar */
 nav {
     text-align: center;
 }
 
+/* Navigation list styles */
 nav ul {
-    list-style: none;
+    list-style: none; /* Removes default list styling, error prevention. */
     padding: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Centres the navigation items */
+    gap: 20px; /* Space between navigation items */
     margin: 0;
 }
 
+/* Navigation links with hover effect */
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Removes underline from links, visual preference */
     color: #fff;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem; /* Adds padding inside the links */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
 
 nav ul li a:hover {
-    background: #10527d;
-    transform: translateY(-2px);
+    background: #10527d; /* Changes background colour on hover */
+    transform: translateY(-2px); /* Slightly raises the link */
 }
 
+/* Main content area */
 main {
     padding: 2rem;
-    flex: 1;
+    flex: 1; /* Allows the main area to grow and fill available space */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+/* Main content sections with shadow and rounded corners */
 section.mainblock, section.mainblock-alt {
     max-width: 100vh;
     text-align: center;
     margin-bottom: 2rem;
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
+/* Heading styles */
 h1 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
+/* Paragraph styling */
 p {
     font-size: 1.1rem;
     color: #666;
-    line-height: 1.8;
+    line-height: 1.8; /* Sets the line height for better readability */
     margin-bottom: 1rem;
 }
 
+/* Footer with background colour */
 footer {
     background: #1C5D99;
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: auto;
+    margin-top: auto; /* Pushes footer to the bottom, and keeps it there */
     width: 100%;
 }
 
@@ -96,23 +107,27 @@ footer p {
     margin: 0;
 }
 
+/* Project sections with hover effect */
 .project {
     background: #1C5D99;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease; /* Smooth transition for background colour when hovering */
     color: #fff;
 }
+
 .project p {
     font-size: 1.1rem;
     color: #DBDFE6;
     line-height: 1.8;
     margin-bottom: 1rem;
+    text-decoration: none; /* Removes underline from links, visual preference */
 }
+
 .project:hover {
-    background: #10527d;
+    background: #10527d; /* Changes background colour on hover */
 }
 
 .project summary {
@@ -127,26 +142,30 @@ footer p {
     color: #fff;
 }
 
-.project-details {
+.project-details a{
     margin-top: 1rem;
     color: #fff;
+    text-decoration: none; /* Removes underline from links, visual preference */
+    font-weight: bold;
 }
 
+/* Image hover effects */
 .index-image, .about-image, .index-image5, .index-profile, .project-thumbnail {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box shadow for added depth*/
 }
 
 .index-image:hover, .about-image:hover, .index-image5:hover, .index-profile:hover, .project-thumbnail:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slightly enlarges the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
 }
 
+/* Circular images with shadow */
 .index-image, .about-image, .index-image5 {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the image circular */
     margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
 }
 
 .index-image1 {
@@ -177,25 +196,28 @@ footer p {
     margin-top: -10px;
 }
 
+/* Profile image styles */
 .index-profile {
     width: 300px;
     height: auto;
-    border-radius: 20%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20%; /* Rounds the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
     margin-top: 2rem;
 }
 
+/* Project thumbnail styles */
 .project-thumbnail {
     width: 100%;
     max-width: 640px;
     height: auto;
-    border-radius: 1%;
-    box-shadow: 2 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1%; /* Slightly rounds the corners */
+    box-shadow: 2 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
     margin-top: 2rem;
 }
 
+/* Unordered list styles */
 main ul {
-    list-style: none;
+    list-style: none; /* Removes default list styling */
     padding: 0;
 }
 
@@ -229,6 +251,7 @@ main ul li.no-dash::before {
     content: "";
 }
 
+/* Form block styles */
 .formblock {
     max-width: 100%;
     text-align: left;
@@ -275,6 +298,7 @@ main ul li.no-dash::before {
     transform: scale(1.05);
 }
 
+/* Icon styles */
 .icon {
     width: 30px;
     height: 30px;
@@ -287,6 +311,7 @@ main ul li.no-dash::before {
     margin: -0.3rem;
 }
 
+/* Section divider styles */
 .section-divider {
     border: none;
     height: 3px;
