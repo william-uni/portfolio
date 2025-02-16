@@ -41,4 +41,18 @@ portfolio/
  ├── img20.png
  └── img21.png
 ## How to View the Project
-1. **Main Method** Visit the live website at https://william-uni.github.io/portfolio/.
+### Main Method - GitHub Pages
+1. Visit the live website at https://william-uni.github.io/portfolio.
+
+### Alternative Method - Host Locally via Python
+1. Open the command prompt.
+2. Navigate to the project directory:
+   ```sh
+   cd *Project File Location*
+   ```
+3. Start a local server:
+
+   ```sh
+   python -m http.server 8000
+   ```
+4. Open your browser and go to http://localhost:8000/portfolio.html.
