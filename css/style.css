@@ -26,7 +26,7 @@ header {
     width: 100%;
 }
 
-/* Centre-aligns the navigation bar */
+/* aligns the navigation bar */
 nav {
     text-align: center;
 }
@@ -114,7 +114,7 @@ footer p {
     padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease; /* Smooth transition for background colour when hovering */
+    transition: background 0.3s ease; /* Smooth transition for background colour when hovering over items */
     color: #fff;
 }
 
@@ -319,3 +319,6 @@ main ul li.no-dash::before {
     margin: 20px 0;
     opacity: 0.6;
 }
+
+/* Media Responsiveness implementation already handled in scaling. Works well on mobile, desktop landscape or portrait without additional code.*/
+

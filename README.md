@@ -1,11 +1,14 @@
 # My Portfolio Website
 
 ## Project Overview
+This is a portfolio website, consisting of HTML5 code and CSS3 Code to display my educational acumen in a readable
+and easily digestible manner, it features 4 html pages, with an index/home page as the landing page.
+Each page is navigated to from the navigation bar, and there is a 'faux' submission form that can be used to check form validation.
 
 
 ## Features
 - **Home/Index Page**: Mainly used for navigation to other pages within the website, also contains a brief personal summary.
-- **About Page**: Personal information page that outlines my own attritbutes and self interests.
+- **About Page**: Personal information page that outlines my own attributes and self interests.
 - **Portfolio Page**: Detailed overview of my educational achievements and level, along with projects ive worked on
 - **Contact Page**: List of contact information, also allows user to test the form validation and submit a dummy form.
 - **Responsive Design**: Used to help scaling work on mobile, not an actual page just a part of the CSS styling.
